@@ -1,0 +1,92 @@
+Question 1:
+Or: +
+And: adjacency
+XOR: ⊕
+Not: '
+Greater than: >
+Less than: < 
+Question 2:
+a)
+And Null Element
+a 0  0a
+-------
+0 0 | 0
+1 0 | 0
+
+b)
+x'y + xy' + xy
+x'y + x(y' + y)
+x'y + x1
+x + x'y
+(x + x')(x + y)
+Final answer: x+y
+We can test this by making a truth table for 
+each and checking to make sure each row is matching: 
+
+x y | x'y + xy' + xy
+--------------------
+0 0 |      0
+0 1 |      1
+1 0 |      1
+1 1 |      1
+
+x y | x + y
+-----------
+0 0 |  0
+0 1 |  1
+1 0 |  1
+1 1 |  1
+
+Question 3:
+x y | x > y 
+-----------
+0 0 |   0
+0 1 |   0
+1 0 |   1
+1 1 |   0
+
+This truth table can also be produced by calculating xy':
+
+x y | xy' 
+---------
+0 0 |  0
+0 1 |  0
+1 0 |  1
+1 1 |  0
+
+
+Question 4:
+N/A
+
+Question 5:
+It took me 2 gates to build the first circuit: a 'not' and 'and' gate
+I think it would take 6 gates, mimicking the circuit i had for the next binary place, plus an additional 2 for an edge case
+
+Question 6:
+2 2 bit numbers would lead to 16 total combinations, therefore 16 rows
+2 3 bit numbers, following the same logic would need 64 rows
+Going by the trend, a 2 3 bit comparator would need 22 gates
+and increasing the amount of bits would exponentiate the total
+required amount of gates
+
+Question 7:
+a) The statement 1100101011010111011 > 1100101101011001001 is false
+b) You start at the left most digit and start comparing. 
+If they match, then move onto the next digit. If they're not matching 
+and the left number has a 1, then the left number is bigger. Otherwise, 
+the right number is bigger.
+
+Question 8:
+
+x y | x > y | x = y
+-------------------
+0 0 |   0   |  1
+0 1 |   0   |  0
+1 0 |   1   |  0
+1 1 |   0   |  1
+Question 9: If the output is neither x > y nor x = y, then by implication, it means x < y
+Question 10:
+Question 11:
+Question 12:
+
+EXTRA CREDIT: https://www.cs.drexel.edu/~amp642/comparator.html
